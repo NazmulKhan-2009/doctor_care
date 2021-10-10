@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo:700|Open+Sans");
+
+*::-webkit-scrollbar {
+	display: none;
+}
+
+*{
+	-ms-overflow-style: none;
+	scrollbar-width: none; /* Firefox */
+
+	
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+body{
+ /* background: #10273A; */
+ font-size: 14px;
+ font-weight: 400;
+ font-family: 'Open Sans', sans-serif;
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+ -webkit-font-smoothing: subpixel-antialiased;
+ color: #abacae;
+ line-height: 25px;
+ -webkit-backface-visibility: hidden;
+ backface-visibility: hidden;
+ overflow-x: hidden;
+ 
+}
+body::-webkit-scrollbar {
+ display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+body{
+ -ms-overflow-style: none;  /* IE and Edge */
+ scrollbar-width: none;  /* Firefox */
+}
+
+/* SECTION DATA  */
+.section_info{
+
+}
+
+.section-title {
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: crimson;
+	text-shadow: 5px 4px 5px rgba(0, 0, 0, 0.36);
+	margin-bottom: 10px;
+	letter-spacing: 0.2rem;
+	text-align: center;
+
+}
+
+.section_info P{
+color:#111430;
+}
+
+/* BUTTON GLOBAL */
+.button_style_all {
+	background-color: transparent;
+	border: 2px solid crimson;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+ color: crimson;
+	margin: 20px 5px;
+	padding: 5px 10px;
+	font-size: 1rem;
+ border-radius: 10px;
+ cursor:pointer;
+ outline: none;
+}
+
+.button_style_all{
+ text-align: center;
+ margin: 0 auto;
+
+}
+
+.button_style_all:hover {
+	color: khaki;
+	background-color: crimson;
+}
+
+.nav_style{
+	text-decoration: none !important;
+}

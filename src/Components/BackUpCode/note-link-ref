@@ -1,0 +1,117 @@
+docotor speciality resources==> 
+https://www.webmd.com/health-insurance/insurance-doctor-types
+
+
+
+
+import FileBase64 from 'react-file-base64';
+
+
+ const {profilePhoto, setProfilePhoto}= useContext(UserContext)
+
+
+
+
+ const handleUpload=(image)=>{
+  // image.type.slice(0,5)==="image" ? setFile(image.base64) : alert("Please Upload an Image within 5MB")
+  
+  if(image.type.slice(0,5)==="image"){
+      imageUpload({userImage:image.base64,email:userInfo.userEmail},'profilePhoto')
+      .then(res=>{
+        setProfilePhoto(res.data.userImage)
+        // if(res){
+        //   sessionStorage.setItem('userInfo',JSON.stringify({...userData,photo:res.data.userImage}));
+        //   setDataLoad(!dataLoad)
+        // }
+        // //console.log(res)
+        
+      
+      
+      })
+  }else{
+    alert("Please Upload an Image within 5MB")
+  }
+  
+}
+
+
+
+
+
+ <Avatar alt="Remy Sharp" src={profilePhoto} className={classes.large} />
+
+<Grid className={`${upload_Button} ${file_base}`}>
+      
+            <label htmlFor="fileInput">
+            <PhotoCamera  style={{position:"absolute",width:"35px",height:"30px",cursor:'pointer',paddingTop:"5px"}} color="secondary"/>
+            </label>
+      
+            {/* <FileBase64 multiple={false} onDone={image => //console.log(typeof image.base64)}/> 
+                                   */}
+            {/* && image.size<"5000 kB"  */}
+            {/* <FileBase64 required={true} multiple={false} onDone={image =>image.type.slice(0,5)==="image" ? setFile(image.base64) : alert("Please Upload an Image within 5MB")}/>     */}
+
+            <FileBase64 required={true} multiple={false} onDone={(image)=>handleUpload(image)}/>                   
+      </Grid>
+
+
+
+
+      css=====================>
+
+
+      .upload_Button{
+ /* width: 30px;
+ height:45px; */
+ /* margin-left: auto; */
+ /* margin-right: 5px;
+
+ text-shadow: "5px 4px 11px rgba(0, 0, 0, 0.26)";
+ color: #fd5c63; */
+ /* background-color: #DEFFED; */
+ /* border: 1px solid #A3A3A3; */
+ /* border-radius: 5px;
+ box-sizing: border-box;
+ font-size: 1rem;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+ overflow: hidden; */
+ /* padding:3px 10px; */
+ /* position: relative;
+ border:none; */
+}
+/* .upload_Button::before{
+ content:"Upload Photo";
+ width:'50px';
+ position:absolute;
+ left:35%;
+ top:25%;
+ font-weight: bold;
+ text-shadow: "5px 4px 11px rgba(0, 0, 0, 0.26)";
+            
+ 
+ 
+} */
+.img_control{
+ position: relative;
+}
+.file_base{
+ 
+ position:absolute;
+ top:130px;
+ left:100px;
+ 
+}
+.file_base::before{
+ /* content:"Upload Photo"; */
+}
+.file_base input{
+ /* width: 300px!important; */
+ /* height:40px!important; */
+ opacity: 0!important;
+ position: absolute!important;
+ left: 0px;
+ cursor:pointer;
+ 
+}
+

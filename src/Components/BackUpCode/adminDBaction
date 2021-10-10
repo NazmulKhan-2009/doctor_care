@@ -1,0 +1,27 @@
+<li className="item" id="account">
+        <a href="#account" className="btn" onClick={()=>setMenuHandle(!menuHandle)}><i className="fas fa-address-card"></i>Account</a>
+          {/* <span className="btn" onClick={()=>setMenuHandle(!menuHandle)}><i className="fas fa-user-circle" ></i>My Account</span> */}
+          <div className= { menuHandle ? 'open_subMenu subMenu' : 'close_SubMenu subMenu'}>
+              <p onClick={()=>setMenuHandle(!menuHandle)}>item-1</p>
+              <p>item-2</p>
+              
+          </div>
+      </li>
+      <li className="item" id="about">
+          <a href="#about" className="btn" onClick={()=>setMenuHandle(!menuHandle)}><i className="fas fa-address-card"></i>About</a>
+          {/* <span className="btn" onClick={()=>setMenuHandle(!menuHandle)}><i className="fas fa-user-circle" ></i>My Account</span> */}
+          <div className= { menuHandle ? 'open_subMenu subMenu' : 'close_SubMenu subMenu'}>
+              <p>item-1</p>
+              <p>item-2</p>
+          </div>
+      </li>
+      <li className="item" id="support">
+          <a href="#support" className="btn" onClick={()=>setMenuHandle(!menuHandle)}><i className="fas fa-info"></i>Support</a>
+          {/* <span className="btn" onClick={()=>setMenuHandle(!menuHandle)}><i className="fas fa-user-circle" ></i>My Account</span> */}
+          <div className= { menuHandle ? 'open_subMenu subMenu' : 'close_SubMenu subMenu'}>
+              <p>item-1</p>
+              <p>item-1</p>
+              <p>item-1</p>
+              
+          </div>
+      </li>

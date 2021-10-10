@@ -1,0 +1,54 @@
+body { 
+ background: #e4ebe9 url(../../../../images/background/background_img_3.png) repeat top left;
+}
+/* #profile_data  {
+ background: #e4ebe9 url(../../../../images/background/background_img_3.png) repeat top left;
+} */
+
+#profile_data  .form-control:focus {
+ box-shadow: none;
+ border-color: #BA68C8
+}
+.profile_wrapper{
+ background: #e4ebe9 url(../../../../images/background/background_img_3.png) repeat top left;
+
+}
+.profile_field input{
+ background: #e4ebe9 url(../../../../images/background/background_img_3.png) repeat top left;
+ border:none;
+ border-bottom: 1px solid  rgb(99, 39, 120);
+ /* background: #10273A; */
+ border-radius: 0 !important;
+}
+
+
+#profile_data  .profile-button {
+ background: #10273A;
+ box-shadow: none;
+ border: none
+}
+
+#profile_data  .profile-button:focus {
+ background: #10273A;
+ box-shadow: none
+}
+
+#profile_data  .profile-button:active {
+ background: #682773;
+ box-shadow: none
+}
+
+#profile_data  .back:hover {
+ color: #10273A;
+ cursor: pointer
+}
+
+#profile_data  .labels {
+ font-size: 12px
+}
+
+#profile_data  .add-experience:hover {
+ background: #10273A;
+ cursor: pointer;
+ transition:.5s;
+}

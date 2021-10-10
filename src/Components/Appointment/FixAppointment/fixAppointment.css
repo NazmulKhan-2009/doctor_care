@@ -1,0 +1,27 @@
+#fix_appointment .doctor_list{
+height:250px;
+overflow:scroll;
+padding:0 10px;
+}
+#fix_appointment .doctor_list::-webkit-scrollbar {
+ display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+#fix_appointment .doctor_list{
+ -ms-overflow-style: none;  /* IE and Edge */
+ scrollbar-width: none;  /* Firefox */
+}
+
+@media only screen and (max-width: 767px) {
+ .wrapper_doctor_info{
+  margin-top: 15px;
+  
+ }
+
+  .wrapper_doctor_info h5{
+   font-size:15px;
+  }
+ 
+}
+
+

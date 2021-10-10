@@ -1,0 +1,10 @@
+#recent_post p{
+ line-height:18px;
+}
+#recent_post span{
+ color:khaki;
+ cursor:pointer;
+}
+#recent_post span:hover{
+ border-bottom:1px solid khaki;
+}

@@ -1,0 +1,102 @@
+#footer_social_icon ul{
+ display: flex;
+ flex-direction: column;
+}
+#footer_social_icon ul li{
+ position: relative;
+ display: block;
+ /* color: #666; */
+ color: khaki;
+ font-size: 20px;
+ height: 40px;
+ width: 40px;
+ background: #171515;
+ line-height: 40px;
+ /* border-radius: 50%; */
+ margin: 0 10px;
+ cursor: pointer;
+ transition: .5s;
+ text-align: center;
+ -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+#footer_social_icon ul li:before{
+
+ border-radius: 50%;
+ transform: scale(.9);
+ z-index: -1;
+ transition: .5s;
+}
+#footer_social_icon ul li:nth-child(1):before{
+ background: #4267B2;
+}
+#footer_social_icon ul li:nth-child(2):before{
+ background: #1DA1F2;
+}
+#footer_social_icon ul li:nth-child(3):before{
+ background: #E1306C;
+}
+#footer_social_icon ul li:nth-child(4):before{
+ background: #2867B2;
+}
+#footer_social_icon ul li:nth-child(5):before{
+ background: #ff0000;
+}
+#footer_social_icon ul li:hover:before{
+ filter: blur(3px);
+ transform: scale(1.2);
+ /* box-shadow: 0 0 15px #d35400; */
+}
+#footer_social_icon ul li:nth-child(1):hover:before{
+ box-shadow: 0 0 15px #4267B2;
+}
+#footer_social_icon ul li:nth-child(2):hover:before{
+ box-shadow: 0 0 15px #1DA1F2;
+}
+#footer_social_icon ul li:nth-child(3):hover:before{
+ box-shadow: 0 0 15px #E1306C;
+}
+#footer_social_icon ul li:nth-child(4):hover:before{
+ box-shadow: 0 0 15px #2867B2;
+}
+#footer_social_icon ul li:nth-child(5):hover:before{
+ box-shadow: 0 0 15px #ff0000;
+}
+#footer_social_icon ul li:nth-child(1):hover{
+ color: #456cba;
+ box-shadow: 0 0 15px #4267B2;
+ text-shadow: 0 0 15px #4267B2;
+}
+#footer_social_icon ul li:nth-child(2):hover{
+ color: #26a4f2;
+ box-shadow: 0 0 15px #1DA1F2;
+ text-shadow: 0 0 15px #1DA1F2;
+}
+#footer_social_icon ul li:nth-child(3):hover{
+ color: #e23670;
+ box-shadow: 0 0 15px #E1306C;
+ text-shadow: 0 0 15px #E1306C;
+}
+#footer_social_icon ul li:nth-child(4):hover{
+ color: #2a6cbb;
+ box-shadow: 0 0 15px #2867B2;
+ text-shadow: 0 0 15px #2867B2;
+}
+#footer_social_icon ul li:nth-child(5):hover{
+ color: #ff1a1a;
+ box-shadow: 0 0 15px #ff0000;
+ text-shadow: 0 0 15px #ff0000;
+}
+/* #footer_social_icon ul li:hover{
+ color: #ffa502;
+ box-shadow: 0 0 15px #d35400;
+ text-shadow: 0 0 15px #d35400;
+} */
+
+@media only screen and (max-width: 600px) {
+  #footer_social_icon ul{
+    flex-direction:row;
+    
+  }
+
+}

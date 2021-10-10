@@ -1,0 +1,31 @@
+#service {
+ /* font-size: 3rem; */
+	text-align: center;
+}
+
+#service h5{
+	color: #10273A;
+	font-weight: bold;
+}
+
+#service p{
+	color:#10273A;
+}
+
+#service p span{
+	color:crimson;
+	cursor:pointer;
+	transition:.3s;
+}
+
+#service p span:hover{
+	font-weight: bold;
+	transition:.3s;
+}
+
+
+
+
+
+/* RESPONSIVE FOR 767 */
+@media (max-width: 767px) {}

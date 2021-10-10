@@ -1,0 +1,10 @@
+ 
+ .footer_location p{
+  line-height:2rem;
+  color:khaki;
+ }
+
+ .footer_location p i{
+  color:crimson;
+  padding:0 10px 0 0
+ }

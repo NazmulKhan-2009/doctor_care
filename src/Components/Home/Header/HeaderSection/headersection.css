@@ -1,0 +1,101 @@
+#home .container{
+background-image:url("../../../../images/banner/banner_e_2.png");
+height: 100vh;
+max-width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+/*!GET APPOINTMENT BUTTON */
+#button .appointment_btn {
+	display: inline-block;
+	background-color: transparent;
+	border: 2px solid crimson;
+	letter-spacing: 0.1rem;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+ color: crimson;
+	margin: 20px 5px;
+	padding: 10px 20px;
+	font-size: 1rem;
+ border-radius: 10px;
+ cursor:pointer;
+ outline: none;
+}
+
+/*! FOR BANNER _1 */
+/* .get_appoint{
+ position:absolute;
+ bottom:0px;
+ left:100px;
+}
+
+
+
+/*! FOR BANNER _2 */
+.get_appoint {
+ 
+ padding-top:300px;
+ color:crimson
+ 
+}
+
+.get_appoint h3{
+ /* color:#0C5687; */
+ color:black;
+ /* width:40%; */
+ text-shadow: 5px 4px 5px rgba(0, 0, 0, 0.36);
+ font-size:25px;
+} 
+
+#button .appointment_btn:hover {
+	color: khaki;
+	background-color: crimson;
+}
+
+
+
+
+
+/*! RESPONSIVE IN 767PX MAX */
+@media (max-width: 767px) {
+ #button .appointment_btn {
+  padding: 5px 10px;
+  font-size: .9rem;
+  outline: none;
+  transform: translate(50%,50%); 
+  margin: 0px 0px;
+ }
+
+ .get_appoint{
+  position:absolute;
+  bottom:120px;
+  left:10px;
+  
+ }
+
+ .get_appoint h3,
+ .get_appoint img,
+ .get_appoint span
+ {
+  display:none;
+ }
+ 
+ #button .appointment_btn:hover {
+  color: khaki;
+  background-color: crimson;
+ }
+
+}
+
+/*! RESPONSIVE IN 800PX MAX */
+@media screen and (max-width: 800px) {
+ #home .container{
+  background-image:url("../../../../images/banner/banner_res.png");
+  background-position: center;
+  
+ }
+
+}
+

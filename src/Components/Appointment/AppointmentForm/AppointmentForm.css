@@ -1,0 +1,50 @@
+#appointment_form input{
+ border-radius: 50px;
+ height: 25px;
+ outline: none !important;
+ border:1px solid #111430;
+ margin:5px
+ /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+#appointment_form textarea{
+ border-radius: 30px;
+ outline: none !important;
+ border:1px solid #111430;
+ /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+
+#appointment_form  .form-control {
+ color:#111430 !important;
+ text-shadow: 5px 4px 5px rgba(0, 0, 0, 0.36) !important;
+}
+
+
+#appointment_form  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+#appointment_form h4{
+ text-align: center;
+ color:crimson;
+}
+#appointment_form ul li{
+ list-style-type: none;
+ color:#111430;
+
+}
+#appointment_form ul li i{
+ color:red;
+ padding:0 10px 0 10px;
+}
+
+@media only screen and (max-width: 767px) {
+ #appointment_form ul li i{
+  padding:none;
+ }
+ #appointment_form ul li{
+ font-size: 12px;
+ 
+ }
+
+}

@@ -1,0 +1,43 @@
+#patient_count .count_area{
+ width:100%;
+ height:10vh;
+ margin:25px 0;
+
+}
+#patient_count .para{
+ border-radius: 10px;
+ padding:10px;
+ text-align:center;
+}
+
+#patient_count h1{
+ color:white;
+ font-weight:bold;
+}
+#patient_count span{
+ font-size:18px;
+ color:white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {}

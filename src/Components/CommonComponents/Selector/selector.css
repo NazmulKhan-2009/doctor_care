@@ -1,0 +1,22 @@
+.css-1s2u09g-control {
+ border-color:#111430 !important;
+ outline:none !important;
+ border-radius:20px !important;
+
+}
+.css-1pahdxg-control{
+ border-radius:20px !important;
+ border-color:#111430 !important;
+ /* box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 3px !important ; */
+ box-shadow:5px 4px 5px rgba(0, 0, 0, 0.36)!important ;
+
+}
+
+.css-14el2xx-placeholder {
+ color: crimson !important;
+ text-shadow:5px 4px 5px rgba(0, 0, 0, 0.36)!important ;
+}
+
+.css-2613qy-menu{
+ color:black;
+}

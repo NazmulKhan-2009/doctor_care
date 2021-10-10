@@ -1,0 +1,64 @@
+/* .top{
+ z-index: 2;
+ position: fixed;
+ bottom:2vh;
+ background-color: black;
+ color:black;
+ font-size:30px;
+ border-radius: 50%;
+} */
+
+.scrollBtn {
+ /* display: none; */
+ position: fixed;
+ bottom: 18px;
+ right: 15px;
+ text-decoration: none;
+ cursor:pointer;
+}
+.scrollBtn i:hover{
+ background:black;
+ transition:.5s;
+}
+
+.scrollBtn i {
+ display: block;
+ font-size: 22px;
+ width: 40px;
+ height: 40px;
+ line-height: 40px;
+ color: #fff;
+ /* background: khaki; */
+ border-radius: 30px;
+ text-align: center;
+ transition: all 0.2s ease-in-out;
+ -moz-transition: all 0.2s ease-in-out;
+ -webkit-transition: all 0.2s ease-in-out;
+ -o-transition: all 0.2s ease-in-out;
+ box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+
+
+.scrollBtn i
+{
+ /* color: #1cc7d0;
+ border-color: #1cc7d0;
+ background: linear-gradient(375deg, transparent, transparent); */
+ color: #00f3ff;
+text-shadow: 0 0 15px #00f3ff,
+    0 0 25px #00f3ff;
+animation: animate 5s linear infinite;
+transition:.5s;
+}
+
+@keyframes animate
+{
+0%
+{
+ filter: hue-rotate(0deg);
+}
+100%
+{
+ filter: hue-rotate(360deg);
+}
+}

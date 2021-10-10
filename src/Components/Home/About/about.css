@@ -1,0 +1,26 @@
+.about_wrapper{
+	display:flex;
+	align-items: center;	
+	
+}
+
+.about_wrapper p{
+	text-align: justify;
+	color:black;
+}
+
+#section .section-title span{
+ font-size: 3rem;
+}
+
+
+
+
+
+/* RESPONSIVE FOR 767 */
+@media (max-width: 767px) {
+	.about_wrapper{
+		display:block;
+	}
+ 
+}

@@ -1,0 +1,27 @@
+.modal-content {
+  border-radius: 1rem 5rem !important;
+  background: #2C3845 !important;   
+}
+
+.modal-header {
+  padding:1px !important;
+  border-bottom:none !important;     
+}
+
+.modal-body {
+ padding:35px 20px 0px 35px !important;   
+}
+.modal-body h5{
+ color:khaki !important;
+}
+
+.modal-footer {   
+ padding: .1rem !important;
+ border-top:none !important;
+ 
+ }
+
+ .modal-footer .my_btn{   
+ background:transparent !important;
+ border:none !important;
+ }

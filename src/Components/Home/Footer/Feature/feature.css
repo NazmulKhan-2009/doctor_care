@@ -1,0 +1,11 @@
+.footer_feature p{
+ line-height:2rem;
+ color:khaki;
+ cursor:pointer;
+}
+
+.footer_feature p i{
+ color:crimson;
+ padding:0 10px 0 ;
+ 
+}

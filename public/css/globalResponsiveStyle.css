@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+	
+	
+ .section_info .section-title {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: crimson;
+  margin-bottom: 10px;
+  letter-spacing: 0.2rem;
+  text-align: center;
+ }
+ .section_info p{
+  text-align: center;
+ }
+
+ .section-title span{
+  font-size: 3rem;
+ }
+ 
+
+ 
+}

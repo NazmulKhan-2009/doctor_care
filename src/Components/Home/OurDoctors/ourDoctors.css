@@ -1,0 +1,108 @@
+#doctor h5{
+	color: #10273A;
+	/* font-weight: bold; */
+}
+
+#doctor p{
+	color:#10273A;
+}
+
+#doctor p span{
+	color:crimson;
+	cursor:pointer;
+	transition:.3s;
+}
+
+#doctor p span:hover{
+	font-weight: bold;
+	transition:.3s;
+}
+
+#doctor .doctor{ 
+ padding:20px 5px;
+ position:relative;
+ margin-top: 80px;
+}
+
+#doctor .doctor_data{
+ /* border:2px solid crimson; */
+ padding:40px 20px;
+ height:150px;
+ background-color:#A59279;
+ display:flex;
+ flex-direction:column;
+ border-radius:10px;
+ justify-content:space-around;
+}
+
+#doctor .doctor_data h5{
+ font-size:18px;
+ color:#10273A;
+	text-align: center;
+ text-shadow: 5px 4px 5px rgba(0, 0, 0, 0.36);
+}
+
+#doctor .doctor_data span{
+	padding-top:55px;
+	color:crimson;
+	text-align: center;
+ text-shadow: 5px 4px 5px rgba(0, 0, 0, 0.36);
+}
+
+#doctor img{
+ border-radius: 50%;
+ /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+ position: absolute;
+ left: 50%;
+ top: 5%;
+ /* border-radius: 100%; */
+ transform: translate(-50%,-50%);
+ background-color:white;
+ border:5px solid white;
+}
+/* 
+#button .doctor_details {
+	background-color: transparent;
+	border: 2px solid crimson;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+ color: crimson;
+	margin: 20px 5px;
+	padding: 5px 10px;
+	font-size: 1rem;
+ border-radius: 10px;
+ cursor:pointer;
+ outline: none;
+}
+
+#button .doctor_details{
+ text-align: center;
+ margin: 0 auto;
+}
+
+#button .doctor_details:hover {
+	color: khaki;
+	background-color: crimson;
+}
+ */
+
+
+
+
+	/* RESPONSIVE FOR 767 */
+@media (max-width: 767px) {
+
+ #doctor .section-title span{
+  font-size: 3rem;
+ }
+ #doctor .doctor_data{
+  margin:0px 15px;
+ }
+
+ 
+#doctor .doctor_data span{
+	padding-top:55px;
+
+}
+
+}

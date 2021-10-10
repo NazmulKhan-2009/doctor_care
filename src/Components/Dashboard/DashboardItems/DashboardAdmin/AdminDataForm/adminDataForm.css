@@ -1,0 +1,100 @@
+
+#data_form label {
+ color: red;
+ opacity:.6;
+}
+
+#data_form  input::-webkit-outer-spin-button,
+#data_form  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#data_form  input,
+#data_form  select,
+#data_form  textarea
+{
+  border:1.5px solid #FF6F61;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Firefox */
+#data_form input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#data_form  .btn-send {
+ font-weight: 300;
+ text-transform: uppercase;
+ letter-spacing: 0.2em;
+ width: 80%;
+ margin-left: 3px
+}
+
+#data_form .help-block.with-errors {
+ color: #ff5050;
+ margin-top: 5px
+}
+
+#data_form .card {
+ margin-left: 10px;
+ margin-right: 10px
+}
+
+
+
+
+/*!FOR FILE BASE64 */
+
+
+.img_control{
+ position: relative;
+}
+.file_base{
+ 
+ /* position:absolute;
+ top:130px;
+ left:100px; */
+ /* border:2px solid yellow; */
+ width:50px;
+ height:60px;
+ 
+}
+.file_base::before{
+ /* content:"Upload Photo"; */
+}
+.file_base input{
+ width: 30px!important;
+ height:30px!important;
+ opacity: 0!important;
+ position: absolute!important;
+ left: 0px;
+ /* cursor:pointer; */
+ 
+ 
+ left:35px;
+ bottom:40px;
+}
+
+.file_base i{
+ position:absolute;
+ width:55px;
+ font-size:30px;
+ height:30px;
+ /* cursor:pointer; */
+ /* padding-top:5px; */
+ color:#FF6F61;
+
+ left:35px;
+ bottom:40px;
+}
+
+
+/*!FOR FILE BASE64 */
+
+
+
+@media only screen and (max-width: 767px) {
+
+
+}

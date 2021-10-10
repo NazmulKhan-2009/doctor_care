@@ -1,0 +1,138 @@
+/* 
+.deviceMenu{
+ display: none;
+}
+.cartDisp{
+ display: none !important;
+}
+
+
+
+
+
+
+.link_style{
+ color:#FD5C63;
+ font-family: 'MuseoModerno', cursive;
+ text-shadow: 5px 4px 11px rgba(0, 0, 0, 0.26);
+ text-decoration:none;
+
+}
+
+
+
+.back-to-top {
+ position: fixed;
+ display: none;
+ width: 40px;
+ height: 40px;
+ border-radius: 50px;
+ right: 15px;
+ bottom: 15px;
+ background: #149ddd;
+ color: #fff;
+ transition: display 0.5s ease-in-out;
+ z-index: 99999;
+}
+
+.back-to-top i {
+ font-size: 24px;
+ position: absolute;
+ top: 7px;
+ left: 8px;
+}
+
+.back-to-top:hover {
+ color: #fff;
+ background: #2eafec;
+ transition: background 0.2s ease-in-out;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+ .deviceMenu{
+   display: block;
+   position: fixed;
+   right:0;
+   z-index: 99999;
+
+ }
+ .desk_menu{
+   display:none;
+ }
+ .responsive_dashboard{
+   padding:25px;
+ }
+ .responsive_dashboard .dashboard_header{
+   display:none;
+ }
+ .cartDisp{
+   display: block !important;
+  }
+}
+.shadow{
+ border:2px solid black;
+} */
+
+
+
+/* !2nd try */
+
+
+/* ScrollToTop */
+a.back-to-top {
+ display: none;
+ position: fixed;
+ bottom: 18px;
+ right: 15px;
+ text-decoration: none;
+}
+
+a.back-to-top i {
+ display: block;
+ font-size: 22px;
+ width: 40px;
+ height: 40px;
+ line-height: 40px;
+ color: #fff;
+ /* background: khaki; */
+ border-radius: 30px;
+ text-align: center;
+ transition: all 0.2s ease-in-out;
+ -moz-transition: all 0.2s ease-in-out;
+ -webkit-transition: all 0.2s ease-in-out;
+ -o-transition: all 0.2s ease-in-out;
+ box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+}
+
+a.back-to-top i
+{
+ /* color: #1cc7d0;
+ border-color: #1cc7d0;
+ background: linear-gradient(375deg, transparent, transparent); */
+ color: #00f3ff;
+text-shadow: 0 0 15px #00f3ff,
+    0 0 25px #00f3ff;
+animation: animate 5s linear infinite;
+transition:.5s;
+}
+
+@keyframes animate
+{
+0%
+{
+ filter: hue-rotate(0deg);
+}
+100%
+{
+ filter: hue-rotate(360deg);
+}
+}
+
+
+
+a.back-to-top:hover, a.back-to-top:focus {
+ text-decoration: none;
+}

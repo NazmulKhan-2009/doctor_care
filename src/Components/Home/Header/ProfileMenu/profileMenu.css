@@ -1,0 +1,146 @@
+/* ----------------------------------
+Css Profile Edit Dropdown
+Author: iModDesign
+Version: 1.0
+------------------------------------ */
+/* body {
+	background:#222;
+} */
+#profile_menu{
+ position:absolute;
+ top:-50px;
+ right:-80px;
+ transition: .5s;
+
+}
+#profile_menu:hover{
+ right:0px;
+ transition: .5s;
+}
+#profile_menu ul, li {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+a {text-decoration:none;}
+
+#profile_menu .profile-wrapper {
+	width:200px;
+	position:relative;
+	margin:50px auto;
+}
+#profile_menu .profile-wrapper::after {
+	content: '';
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	border-color: #333 transparent transparent;
+	border-width: 6px;
+	border-style: solid;
+}
+#profile_menu .profile-wrapper::before {
+	content: '';
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	border-color: #eee transparent transparent;
+	border-width: 6px;
+	border-style: solid;
+}
+#profile_menu .profile-wrapper:hover::after {
+	border-color: #111 transparent transparent;	
+}
+
+#profile_menu .profile {
+	padding:8px;
+	border:1px solid #000;
+	border-radius:3px;
+	box-shadow:0 1px 0 #555 inset, 0 1px 7px #111;
+	background:-webkit-linear-gradient(#222, #111);
+}
+#profile_menu .profile:hover {
+	cursor:pointer;
+	background:-webkit-linear-gradient(#1f1f1f, #0a0a0a);
+}
+#profile_menu .profile .name {
+	font-size:12px;
+	color:#fff;
+	line-height:26px;
+	margin-left:10px;
+}
+#profile_menu .profile .logged_as{
+	color:khaki;
+	font-size:12px;
+}
+#profile_menu .profile .name:hover {
+	color:#0088cc;
+}
+#profile_menu .profile img {
+	width:35px;
+	display:inline;
+	float:left;
+	/* border:1px solid #111; */
+	border-radius:3px;
+	/* box-shadow:0 0 3px rgba(0, 0, 0, 0.5) inset; */
+}
+
+/* hide menu */
+#profile_menu .menu {
+	display:none;
+	clear:both;
+	margin:20px 0 0 0;
+}
+#profile_menu .menu li {
+	font-size:12px;
+	margin:0;
+  padding: 10px 4px;
+}
+#profile_menu .menu li a,
+#profile_menu .menu li span
+ {
+	color:#555;
+ text-decoration: none;
+ padding: 0 10px;
+}
+#profile_menu .menu li:hover > a,
+#profile_menu .menu li:hover > span{
+	color:#eee;
+ transition: .5s;
+}
+
+#profile_menu .menu li:hover{
+	border-left: 1px solid #111;
+  border-right: 1px solid #222;
+  border-bottom: 1px solid #222;
+  border-top: 1px solid #111;
+  border-radius: 3px;
+}
+
+/* hover profile show menu */
+#profile_menu .profile:hover .menu {
+	display:block;
+}
+
+@media only screen and (max-width: 700px) {
+
+ #profile_menu{
+  position:fixed;
+  top:-45px;
+  right:80px;
+ 
+ }
+
+#profile_menu:hover{
+ right:100px;
+}
+#profile_menu .profile{
+ padding:5px;
+}
+ 
+
+}
+
+
+
+ 
+

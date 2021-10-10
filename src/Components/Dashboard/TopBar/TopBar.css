@@ -1,0 +1,39 @@
+#top_bar{
+ background-image:url("../../../images/top_bar/top_bar_1.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+}
+#top_bar img{
+ border-radius: 30px;
+}
+
+#top_bar {
+ color:white;
+ font-size:18px;
+}
+#top_bar span{
+ color:khaki;
+ font-size:20px;
+
+}
+
+@media only screen and (max-width: 600px) {
+ #top_bar .user_data{
+  padding: 0 30px; 
+ }
+
+ #top_bar {
+  color:white;
+  font-size:12px;
+ }
+
+ #top_bar span{
+  color:khaki;
+  font-size:14px;
+ 
+ }
+ #top_bar h5{
+  font-size: 12px;
+ }
+}
