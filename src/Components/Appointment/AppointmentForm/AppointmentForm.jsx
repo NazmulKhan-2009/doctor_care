@@ -6,7 +6,7 @@ import './AppointmentForm.css';
 
 export default function AppointmentForm() {
 
- const {appointmentDate,selectedDr,setAppointmentDate,setSelectedDr,setSyncAppointment}=useContext(appContext)
+ const {appointmentDate,selectedDr,setAppointmentDate,setSelectedDr,setSyncAppointment,setLoadOnAppointment}=useContext(appContext)
 
  const [appointmentField, setAppointmentField]=useState({})
  const [load, setLoad]=useState(false)
@@ -22,19 +22,17 @@ const handleAppointmentInfo =(recData)=>{
 // setAppointmentInfo(recData.data.data)
 const {name,appointmentDate,serial}= recData.data.data
 setLoad(true)
-alert(`Hello ${name} ${recData.data.notify} on ${appointmentDate} with serial No ${serial}`)
+alert(`Hello ${name} ${recData.data.notify} on ${appointmentDate} with serial No ${serial-1}`)
 // from common function
 // notification(`Hello ${name} ${recData.data.notify} on ${appointmentDate} with serial No ${serial}`)
 setAppointmentField({})
 setAppointmentDate(new Date())
 setSelectedDr('')
-setSyncAppointment(Math.random())
+
+// setSyncAppointment(Math.random())
 }
 
-
-
-
-
+// console.info(selectedDr)
 
  const submitForm=(e)=>{
  e.preventDefault()
@@ -47,6 +45,9 @@ const appointmentData=userInfo ? {...appointmentField,name:userInfo.displayName,
 }else{
     alert('you have not select any doctor')
 }
+
+setLoadOnAppointment("appointment_body")
+setSyncAppointment(Math.random())
 
 }
 const userInfo=JSON.parse(sessionStorage.getItem('userInfo'))
@@ -66,14 +67,15 @@ const userInfo=JSON.parse(sessionStorage.getItem('userInfo'))
 
  return (
 
-  <section className="pt-3" id="appointment_form">
+  <section className="pt-1" id="appointment_form">
     <div className="container">           
+      <span className="text-danger font-weight-bold">{`Date : ${appointmentDate.toLocaleDateString()}`} {selectedDr ? `Doctor : ${selectedDr.name}` : 'Select Doctor →'}</span>
       
       
           <form onSubmit={submitForm}>
           <div className="row"> 
-            <div className="form-row col-md-6">
-               <div className="control-group col-md-6">
+            <div className="form-row">
+               {/* <div className="control-group col-md-6">
                    <input type="text" className="form-control p-4" id="appointment_date" placeholder="Appointment Date"
                        name="appointment_date" value={appointmentDate.toLocaleDateString()}  disabled/>
           
@@ -82,48 +84,34 @@ const userInfo=JSON.parse(sessionStorage.getItem('userInfo'))
                    <input type="text" className="form-control p-4" id="dr_name" placeholder="Select Doctor"
                        required="required"  name="dr_name" value={selectedDr.name || ""} disabled />
                   
-               </div>
-               <div className="control-group col-md-6">
+               </div> */}
+               <div className="control-group  mx-auto col-md-12">
                    <input type="text" className="form-control p-4" id="name" placeholder="Your Name"
                        required="required"  name="name" onChange={onChange} value={userInfo?.displayName ||appointmentField.name || "" } />
                    
                </div>
-               <div className="control-group col-md-6">
+               <div className="control-group  mx-auto col-md-12">
                    <input type="email" className="form-control p-4" id="email" placeholder="Your Email"
                        required="required" name="email"  onChange={onChange} value={userInfo?.email  || appointmentField.email || "" } />
                   
                </div>
-               <div className="control-group col-md-6">
+               <div className="control-group  mx-auto col-md-7">
                    <input type="number" className="form-control p-4" id="phone" placeholder="Your Phone"
                        required="required" name="phone" onChange={onChange} value={appointmentField.phone || "" } />
                   
                </div>
-               <div className="control-group col-md-6">
+               <div className="control-group  mx-auto col-md-5">
                    <input type="number" className="form-control p-4" id="age" placeholder="Your Age"
                        required="required"  name="age" onChange={onChange} value={appointmentField.age || ""}/>
                    
                </div>
-
+               <button className="button_style_all" style={{outline:"none"}}>Set Appointment</button> 
             </div>
 
               
-              <div className="control-group col-md-6">
-               {/* <textarea className="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                   required="required" 
-                   name="message"></textarea> */}
-                <h4>Please Read the Terms</h4>
-               <ul>
-                <li><i class="fas fa-stethoscope"></i> Please bring your previous health report</li>
-                <li><i class="fas fa-stethoscope"></i> Please bring your Covid-19 vaccination report</li>
-                <li><i class="fas fa-stethoscope"></i> please be weared mask</li>
-                <li><i class="fas fa-stethoscope"></i> Appointment time is tentative, it may change </li>
-                <li><i class="fas fa-stethoscope"></i> Doctor may cancel the appointment with logical reason</li>
-               </ul>
-
-               
-              </div>
+             
           
-              <button className="button_style_all" style={{outline:"none"}}>Set Appointment</button>  
+              {/* <button className="button_style_all" style={{outline:"none"}}>Set Appointment</button>   */}
               </div>  
           </form>
                

@@ -53,6 +53,8 @@ const [signIn, setSignIn]= useState({})
 //DATA FETCHED BASED ON ENTRANCE
 const [entrant, setEntrant]=useState({})
 
+//LOADER
+const [loadOnAppointment, setLoadOnAppointment]=useState("")
 
 
 
@@ -100,7 +102,8 @@ return (
     appointmentList, setAppointmentsList,
     syncAppointment,setSyncAppointment,
     signIn, setSignIn,
-    file, setFile
+    file, setFile,
+    loadOnAppointment, setLoadOnAppointment
    
 }}>
   <Router>
@@ -126,6 +129,10 @@ return (
 
         <Route  path="*" component={NotFound} />
       </Switch>
+
+      <div id="preloader">
+        <div className="loader" id="loader-1"></div>  
+      </div>  
   </Router>   
 </appContext.Provider>
 

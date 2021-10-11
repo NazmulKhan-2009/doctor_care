@@ -26,7 +26,7 @@ const handleAction=(type)=>{
 const actionData=[
     {
         id:"doctor",
-        icon:"fas fa-user-circle",
+        icon:"fas fa-user-md",
         menu:"Doctor data control",
         actItem:['Our Doctors','Add Doctor','Delete Doctor','Update Doctor']
     },
@@ -38,15 +38,15 @@ const actionData=[
     },
     {
         id:"patient",
-        icon:"fas fa-user-circle",
+        icon:"fas fa-procedures",
         menu:"Patient data control",
         actItem:['Our Patients','Delete Patient','Update Patient']
     },
 
     {
         id:"blog",
-        icon:"fas fa-user-circle",
-        menu:"Doctor blog",
+        icon:"fab fa-blogger",
+        menu:"Doctor blog control",
         actItem:['Doctor blogs','Write blogs','Delete blogs','Update blogs']
     },
 

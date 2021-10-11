@@ -63,8 +63,6 @@
  overflow:scroll;
  border-radius: 5px;
 	background-color: #434343;
-
-
 }
 #appointment_table .table_data,
 #appointment_table .table_data select{
@@ -109,6 +107,11 @@
 	background-color: crimson;
 }
 
+#appointment_table .table_body img{
+	margin:5% 30%;
+}
+
+
 @media only screen and (max-width: 700px) {
 	#appointment_table .table_head{
 	font-size: 10px;
@@ -119,6 +122,10 @@
  margin:10px 0;
 	
 	
+	}
+
+	#appointment_table .table_body .image{
+		/* margin-top:50%; */
 	}
 
 	

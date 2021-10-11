@@ -31,7 +31,7 @@ export default function DoctorsList({selection}) {
           </div>
               ) 
     : 
-    <h3>Loding.....</h3>
+    <img src="https://i.pinimg.com/originals/3d/6a/a9/3d6aa9082f3c9e285df9970dc7b762ac.gif" alt="" width="60%"/>
               }  
               
      </div>

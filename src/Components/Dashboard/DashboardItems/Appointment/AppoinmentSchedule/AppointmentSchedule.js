@@ -81,8 +81,8 @@ setLoad(false)
             <span key={Math.random()}>{item}</span>   
         )}     
      </div>
- <div className="table_body">        
-      {dateWiseAppointment.map((appointment,i)=>
+    <div className="table_body">        
+      {appointmentList.length>0 ? dateWiseAppointment.map((appointment,i)=>
         <div key={Math.random()}>
           <div className='table_data d-flex align-items-center' style={{backgroundColor: i%2===0 ? '#202932' : '#2C3845' }}>
           
@@ -103,7 +103,11 @@ setLoad(false)
             <i class="fas fa-pen-alt"  onClick={()=>handleModal({...appointment,serial:i+1,status:selectedOption})}  data-toggle={selectedOption !=="" ? openModal : null} data-target="#exampleModal"></i>                
           </div>
         </div>    
-      )}
+      ):
+           
+        <img src="https://i.pinimg.com/originals/3d/6a/a9/3d6aa9082f3c9e285df9970dc7b762ac.gif" alt="" width="40%"/>
+      
+         }
       </div>  
       
     

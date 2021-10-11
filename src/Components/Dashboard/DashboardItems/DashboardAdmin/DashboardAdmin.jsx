@@ -49,9 +49,10 @@ export default function DashboardAdmin() {
  return (
   <DashboardWrapper>
    <div className="container pt-2" id="admin_control">
-   <h3>Admin Control</h3>
+   {/* <h3>Admin Control</h3> */}
     <div className="row pt-5">
      <div className="col-md-4 mx-auto">
+     <h3>Admin Control</h3>
       <AdminDBAction/>    
      </div>
 

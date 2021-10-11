@@ -8,6 +8,7 @@ import './fixAppointment.css';
 import { appContext } from '../../../App';
 import DoctorsList from '../../Dashboard/DashboardItems/DashboardAdmin/OurDoctors/DoctorsList';
 import { doctorSpecialist } from '../../Dashboard/DashboardItems/DashboardAdmin/AdminDataForm/doctorSpecialiteisData';
+import AppointmentForm from '../AppointmentForm/AppointmentForm';
 
 
 export default function FixAppointment() {
@@ -22,6 +23,7 @@ const {appointmentDate,item,setItem}=useContext(appContext)
           {/* column left */}
         <div className="col-md-4   mx-auto"  data-toggle="tooltip" data-placement="top" title="Select Appointment Date">        
           <Calendar/>
+          <AppointmentForm/>
         </div>
         {/* column right */}
         <div className=" col-md-8 mx-auto wrapper_doctor_info">  
@@ -41,14 +43,6 @@ const {appointmentDate,item,setItem}=useContext(appContext)
             
 
             <div className="pt-3 doctor_list ">
-              {/* {Array(6).fill().map(()=>
-                <div key={Math.random()} className="col-md-4 col-sm-10 p-2">
-              <AvailableDoctors/>
-              
-              </div>
-              ) 
-              }                 */}
-
               <DoctorsList selection={item}/>
             </div>      
         </div>                            

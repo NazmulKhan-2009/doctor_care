@@ -54,6 +54,10 @@ thead th {
  border: 1px solid #202932;
 }
 
+#update_appointment img{
+  margin:0 30%
+}
+
 @media (min-width: 720px) {
 
  table {

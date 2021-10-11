@@ -3,6 +3,7 @@
   
   "use strict";  
 
+  $('#preloader').fadeOut();
   $(window).on('load', function() {
 
     if ($('.typed').length) {

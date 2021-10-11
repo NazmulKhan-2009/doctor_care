@@ -29,9 +29,13 @@
 }
 
 .doctors_wrapper{
- height:350px;
+ max-height:80vh;
  overflow: scroll;
- box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
- background: #FF6F61;
+ transition:.5s;
+ /* background: #FF6F61; */
  border-radius:5px;
+}
+.doctors_wrapper:hover{
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ transition:.5s;
 }

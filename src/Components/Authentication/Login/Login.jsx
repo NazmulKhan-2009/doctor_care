@@ -1,17 +1,19 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import {useHistory, useLocation} from 'react-router-dom';
 import logo from '../../../images/logos/logo.png';
 import Fade from 'react-reveal/Fade';
 import { appContext } from '../../../App';
 import { initializeLoginFramework, handleGoogleSignIn, handleFacebookSignIn, token, userSignOut } from '../loginManager';
 import { dataToDb } from '../../../dbManagement';
+import googleIcon from '../../../images/login/google_icon.png';
+import facebookIcon from '../../../images/login/facebook_icon.png';
 import './login.css';
 
 
 
 export default function Login() {
 //HOOKS ↓
-   const {setSignIn}=useContext(appContext)
+   const {setSignIn,loadOnAppointment,setLoadOnAppointment,syncAppointment}=useContext(appContext)
    const history=useHistory()
    const location = useLocation();
 //STATES ↓
@@ -66,6 +68,7 @@ const handleFaceSignIn=()=>{
 
 //Helper Function
 const createUserResponse =(resData)=>{
+   
    alert(resData.data.notify);
    setSignUp(false);
    setUserData({});
@@ -84,7 +87,7 @@ const formSubmit=(e)=>{
  e.preventDefault();
    const handleSubmission= ()=>{
    const baseURL='user/data/create' ;
-      dataToDb('post',baseURL,userData).then(res=>createUserResponse(res)) ;
+      dataToDb('post',baseURL,userData).then(res=>{createUserResponse(res)}) ;
    }
    switch (signUp) {
       case true:
@@ -98,6 +101,7 @@ const formSubmit=(e)=>{
 
       case false:
          handleSubmission(userData);
+         setLoadOnAppointment('appointment_body')
       break;   
 
       default:
@@ -113,10 +117,14 @@ const signOut =()=>{
    history.push('/login');
    });
   }
+
+  useEffect(()=>{
+   setLoadOnAppointment(true)
+  },[syncAppointment])
   
 
  return (
-   <div className="bg-img">
+   <div className={`${loadOnAppointment} bg_login`}>
       <div className="content">     
          <header><img src={logo} alt=""  width="15%" onClick={backToHome} style={{cursor:'Pointer'}}/> Login Zone</header>
       {!userInfo ?
@@ -169,10 +177,15 @@ const signOut =()=>{
          </div>
          <div className="links">
             <div className="facebook" onClick={handleFaceSignIn}>
-               <i className="fab fa-facebook-f"><span>Facebook</span></i>
+               {/* <i className="fab fa-facebook-f"><span>Facebook</span></i> */}
+               <span><img src={facebookIcon} alt="" width="35"/></span>
+
+
             </div>
-            <div className="instagram" onClick={googleSignIn}>
-               <i className=" fab fa-google"><span>Google</span></i>              
+            <div className="google" onClick={googleSignIn}>
+               {/* <i className=" fab fa-google"><span></span></i>               */}
+               
+               <span><img src={googleIcon} alt="" width="35"/></span>
             </div>
          </div>
          <div className="signup">

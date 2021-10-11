@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
 
-.bg-img{
-  /* background: url('bg.jpg'); */
-  /* background: url('../../../images/top_bar_1.png'); */
-  /* background: url('../../../images/login/login_bg_1.png'); */
+.bg_login{
   background: url('../../../images/login/login_bg_2.png');
-
   height: 100vh;
   background-size: cover;
-  background-position: center;
-  
+  background-position: center; 
 }
-.bg-img:after{
+
+.bg_login:after{
   position: absolute;
   content: '';
   top: 0;
@@ -20,7 +16,8 @@
   width: 100%;
   background: rgba(0,0,0,0.7);
 }
-.bg-img .content{
+
+.bg_login .content{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -32,28 +29,29 @@
   background: rgba(255,255,255,0.04);
   box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
 }
-.bg-img .content header{
+
+.bg_login .content header{
   color: white;
   font-size: 33px;
   font-weight: 600;
   margin: 0 0 35px 0;
   font-family: 'Montserrat',sans-serif;
 }
-.bg-img .field{
+
+.bg_login .field{
   position: relative;
   height: 45px;
   width: 100%;
   display: flex;
-  /* background: rgba(255,255,255,0.94); */
   background: transparent;
   border:1px solid rgba(255,255,255,0.94);
 }
-.bg-img .field span{
+.bg_login .field span{
   color: khaki;
   width: 40px;
   line-height: 45px;
 }
-.bg-img .field input{
+.bg_login .field input{
   height: 100%;
   width: 100%;
   background: transparent;
@@ -63,10 +61,10 @@
   font-size: 16px;
   font-family: 'Poppins',sans-serif;
 }
-.bg-img .space{
+.bg_login .space{
   margin-top: 16px;
 }
-.bg-img .show{
+.bg_login .show{
   position: absolute;
   right: 13px;
   font-size: 13px;
@@ -75,26 +73,24 @@
   display: none;
   cursor: pointer;
   font-family: 'Montserrat',sans-serif;
-  
- 
 }
-.bg-img .pass-key:valid ~ .show{
+.bg_login .pass-key:valid ~ .show{
   display: block;
 }
-.bg-img .pass{
+.bg_login .pass{
   text-align: left;
   margin: 10px 0;
 }
-.bg-img .pass span{
+.bg_login .pass span{
   color: white;
   text-decoration: none;
   font-family: 'Poppins',sans-serif;
   cursor: pointer;
 }
-.bg-img .pass:hover a{
+.bg_login .pass:hover a{
   text-decoration: underline;
 }
-.bg-img .field input[type="submit"]{
+.bg_login .field input[type="submit"]{
   /* background: #3498db; */
   border: 1px solid #2691d9;
   color: white;
@@ -103,63 +99,65 @@
   font-weight: 600;
   cursor: pointer;
   font-family: 'Montserrat',sans-serif;
+  transition:.5s;
 }
-.bg-img .field input[type="submit"]:hover{
-  background: #2691d9;
+.bg_login .field input[type="submit"]:hover{
+  letter-spacing: 10px;
+  transition:.5s;
 }
-.bg-img .login{
+.bg_login .login{
   color: white;
   margin: 5px 0;
   font-family: 'Poppins',sans-serif;
 }
-.bg-img .links{
+.bg_login .links{
   display: flex;
   cursor: pointer;
   color: white;
   margin: 0 0 20px 0;
 }
-.bg-img .facebook,.instagram{
+.bg_login .facebook,.google{
   width: 100%;
   height: 45px;
   line-height: 45px;
   margin-left: 10px;
 }
-.bg-img .facebook{
+.bg_login .facebook{
   margin-left: 0;
   /* background: #4267B2; */
-  border: 1px solid #3e61a8;
+  /* border: 1px solid #3e61a8; */
 }
-.bg-img .instagram{
+.bg_login .google{
   /* background: #E1306C; */
-  border: 1px solid #df2060;
+  /* border: 1px solid #df2060; */
 }
-.bg-img .facebook:hover{
-  background: #3e61a8;
+.bg_login .facebook:hover{
+  /* background: #3e61a8; */
 }
-.bg-img .instagram:hover{
-  background: #df2060;
+.bg_login .google:hover{
+  /* background: #df2060; */
 }
-.bg-img .links i{
+.bg_login .links i{
   font-size: 17px;
   
 }
-i span{
+.bg_login i span{
   margin-left: 8px;
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 16px;
   font-family: 'Poppins',sans-serif;
 }
-.bg-img .signup{
+.bg_login .signup{
   font-size: 15px;
   color: white;
   font-family: 'Poppins',sans-serif;
 }
-.bg-img .signup span{
+.bg_login .signup span{
   color: #3498db;
   text-decoration: none;
 }
-.bg-img .signup span:hover{
+.bg_login .signup span:hover{
   text-decoration: underline;
 }
 .logged_out{
@@ -170,4 +168,15 @@ i span{
 .logged_out:hover{
   letter-spacing: .2px;
   transition: .3s;  
+}
+
+
+@media only screen and (max-width: 800px) {
+  .bg_login:after{
+    height:102%;
+    /* width: 102%; */
+  }
+  .bg_login .content{
+    width: 356px;
+  }
 }
