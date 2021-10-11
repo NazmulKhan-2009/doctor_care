@@ -23,7 +23,9 @@ p.copyright span{
 }
 
 @media (max-width: 767px) {
-  
+  .copyright img{
+    width: 5%;
+  }
 }
 
 

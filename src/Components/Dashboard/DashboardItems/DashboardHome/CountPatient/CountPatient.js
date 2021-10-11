@@ -28,6 +28,7 @@ const pData=[
  return (
   <section id="patient_count" className="py-5">
    <div className="container-fluid">
+   <h4>Appointment Status</h4>
     <div className="row">
      
      {pData.map((item)=>

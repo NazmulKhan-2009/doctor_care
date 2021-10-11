@@ -1,25 +1,16 @@
-
 .my_form{
- /* background: #111430; */
- /* background-image:url("../../../images/banner/banner-2.png"); */
- background-image:url("../../../images/online_care/wave.png");
+ background-image:url("../../../images/contact/background_contact.png");
  height:auto;
- padding:50px 100px 10px 200px;
- clip-path: polygon(0 100%, 15% 0, 100% 0, 100% 100%);
- background-position: center;
- background-size: cover;
- /* margin-left:-50px; */
- 
-
+ padding:20px 100px 10px 200px;
+ background-size: cover; 
 }
 
 @media (max-width: 767px) {
-
  .contact_left{
   display:none;
  }
  .my_form{
   padding:10px 20px;
- clip-path:none;
+  clip-path:none;
  }
 }

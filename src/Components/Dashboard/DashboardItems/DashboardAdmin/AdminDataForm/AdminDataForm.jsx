@@ -1,4 +1,3 @@
-
 import { useContext, useState } from 'react';
 import { appContext } from '../../../../../App';
 import { doctorSpecialist } from './doctorSpecialiteisData';
@@ -6,7 +5,7 @@ import FileBase64 from 'react-file-base64';
 import Flip from 'react-reveal/Flip';
 import './adminDataForm.css';
 import { dataToDb } from '../../../../../dbManagement';
-
+import avator from '../../../../../images/dashboard/avator.png'
 
 export default function AdminDataForm() {
 
@@ -227,7 +226,7 @@ const handleEdit=(key)=>{
             <label for="fileInput">Upload Img</label>           
             <Flip left>
               <div className="uploaded_img">
-              <img src={file!==null? file : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSstFoRssbU_zH0iSCOGy27EczgH1obf7AAJ_qe9fR_5XNifak&s'} alt="" width="100" height="100"/>
+              <img src={file!==null? file : avator} alt="" width="100" height="100"/>
               </div> 
             </Flip>             
             <div className="file_base img_control">

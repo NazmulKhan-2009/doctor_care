@@ -152,7 +152,7 @@ const signOut =()=>{
             <div className="field space">
                <span className="fa fa-lock"></span>
                <input type={passwordType ? 'password' : 'text'} className="pass-key" required placeholder="Password" name="password" onChange={handleInput} value={userData.password || ""}/>
-               <span className="show" onClick={()=>setPasswordType(!passwordType)}>SHOW</span>
+               <span className="view" onClick={()=>setPasswordType(!passwordType)}>View</span>
             </div>
           {
              signUp && 
@@ -160,7 +160,7 @@ const signOut =()=>{
              <div className="field space">
                <span className="fas fa-glasses"></span>
                <input type={passwordReType ? 'password' : 'text'} className="pass-key" required placeholder="Retype Password" name="retypePass" onChange={handleInput} value={userData.retypePass || ""}/>
-               <span className="show" onClick={()=> setPasswordReType(!passwordReType)}>SHOW</span>
+               <span className="view" onClick={()=> setPasswordReType(!passwordReType)}>View</span>
             </div>
             </Fade>
           }
@@ -175,17 +175,14 @@ const signOut =()=>{
          <div className="login">
             Or login with
          </div>
-         <div className="links">
+         <div className="links">           
+            <div className="google" onClick={googleSignIn}>
+               {/* <i className=" fab fa-google"><span></span></i>               */}               
+               <span><img src={googleIcon} alt="" width="35"/></span>
+            </div>
             <div className="facebook" onClick={handleFaceSignIn}>
                {/* <i className="fab fa-facebook-f"><span>Facebook</span></i> */}
-               <span><img src={facebookIcon} alt="" width="35"/></span>
-
-
-            </div>
-            <div className="google" onClick={googleSignIn}>
-               {/* <i className=" fab fa-google"><span></span></i>               */}
-               
-               <span><img src={googleIcon} alt="" width="35"/></span>
+               <span><img src={facebookIcon} alt="" width="30"/></span>
             </div>
          </div>
          <div className="signup">

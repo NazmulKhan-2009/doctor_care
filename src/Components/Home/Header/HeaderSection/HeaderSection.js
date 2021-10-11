@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './headersection.css';
 import nav_logo from '../../../../images/logos/logo.png';
 import { useHistory } from 'react-router';
 
-export default function HeaderSection() {
-const history = useHistory()
 
-const letsAppointment=()=>{
+export default function HeaderSection() {
+
+const history = useHistory()
+const letsAppointment=()=>{ 
   history.push('/appointment')
 }
 
@@ -15,16 +16,10 @@ const letsAppointment=()=>{
     
       <div className="container pt-5">
         <div id="button">
-        {/* <div className="get_appoint">
-
-          <h3>Your health our first priority Voluptate, <br/> obcaecati! Natus praesentium quidem nesciunt amet in eos saepe mollitia ad.</h3>
-          <button className='appointment_btn'>Get Appointment</button>
-        </div> */}
         <div className="row">
-          <div className="col-md-5 mr-auto  my-auto get_appoint">
-            
+          <div className="col-md-5 mr-auto  my-auto get_appoint">        
               <img src={nav_logo} alt="" width="10%"/><span>Doctor Care</span>
-              <h3>Your health our first priority Voluptate, <br/> obcaecati! Natus praesentium quidem nesciunt amet in eos saepe mollitia ad.</h3>
+              <h3>Your health remains our top priority! <br/> Taking care of your health right now is the most important thing you can do for yourself and your family.</h3>
           <button className='appointment_btn' onClick={letsAppointment}>Get Appointment</button>
         
           </div>

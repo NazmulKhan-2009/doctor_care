@@ -22,29 +22,19 @@ position: relative;
  border-radius: 10px;
  cursor:pointer;
  outline: none;
+ /* width:230px; */
 }
-
-/*! FOR BANNER _1 */
-/* .get_appoint{
- position:absolute;
- bottom:0px;
- left:100px;
-}
-
 
 
 /*! FOR BANNER _2 */
 .get_appoint {
- 
- padding-top:300px;
- color:crimson
+ padding:300px 0 0 100px;
+ color:crimson;
  
 }
 
 .get_appoint h3{
- /* color:#0C5687; */
  color:black;
- /* width:40%; */
  text-shadow: 5px 4px 5px rgba(0, 0, 0, 0.36);
  font-size:25px;
 } 
@@ -70,16 +60,17 @@ position: relative;
 
  .get_appoint{
   position:absolute;
-  bottom:120px;
+  bottom:30px;
   left:10px;
-  
+  padding:350px 10px 0 20px; 
  }
 
- .get_appoint h3,
  .get_appoint img,
- .get_appoint span
- {
-  display:none;
+ .get_appoint span{
+  display: none;
+ }
+ .get_appoint h3{
+  font-size:15px;
  }
  
  #button .appointment_btn:hover {

@@ -64,7 +64,7 @@
 .bg_login .space{
   margin-top: 16px;
 }
-.bg_login .show{
+.bg_login .view{
   position: absolute;
   right: 13px;
   font-size: 13px;
@@ -73,8 +73,14 @@
   display: none;
   cursor: pointer;
   font-family: 'Montserrat',sans-serif;
+  transition: .5s;
 }
-.bg_login .pass-key:valid ~ .show{
+.bg_login .view:hover{
+  /* cursor: pointer; */
+  letter-spacing:2px;
+  transition: .5s;
+}
+.bg_login .pass-key:valid ~ .view{
   display: block;
 }
 .bg_login .pass{
@@ -116,20 +122,25 @@
   color: white;
   margin: 0 0 20px 0;
 }
-.bg_login .facebook,.google{
+.bg_login .facebook,
+.google{
   width: 100%;
   height: 45px;
   line-height: 45px;
   margin-left: 10px;
 }
 .bg_login .facebook{
-  margin-left: 0;
-  /* background: #4267B2; */
-  /* border: 1px solid #3e61a8; */
+
+  width:50%;
+  border-radius: 20px;
+  background: whitesmoke;
+ 
 }
 .bg_login .google{
-  /* background: #E1306C; */
-  /* border: 1px solid #df2060; */
+  width:50%;
+  background: whitesmoke;
+
+  border-radius: 20px;
 }
 .bg_login .facebook:hover{
   /* background: #3e61a8; */

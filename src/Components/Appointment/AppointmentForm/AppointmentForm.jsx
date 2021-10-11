@@ -22,12 +22,13 @@ const handleAppointmentInfo =(recData)=>{
 // setAppointmentInfo(recData.data.data)
 const {name,appointmentDate,serial}= recData.data.data
 setLoad(true)
-alert(`Hello ${name} ${recData.data.notify} on ${appointmentDate} with serial No ${serial-1}`)
+alert(`Hello ${name} ${recData.data.notify} on ${appointmentDate} with serial No ${serial}`)
 // from common function
 // notification(`Hello ${name} ${recData.data.notify} on ${appointmentDate} with serial No ${serial}`)
 setAppointmentField({})
 setAppointmentDate(new Date())
 setSelectedDr('')
+setSyncAppointment(Math.random())
 
 // setSyncAppointment(Math.random())
 }

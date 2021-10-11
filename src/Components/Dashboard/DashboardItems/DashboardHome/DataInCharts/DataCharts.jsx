@@ -6,9 +6,9 @@ import BarGraphData from './BarGraphData/BarGraphData';
 export default function DataCharts() {
   return (
     <section id="dataCharts">
-    <div className="container py-5" id="data_charts">
-    <h4>Recover Analytics</h4>
-      <div className="row pt-3">     
+    <div className="container py-2" id="data_charts">
+    <h4>Analytics</h4>
+      <div className="row pt-4">     
         {
           [<DoughnutData/>, <LineGraphData/> , <BarGraphData/>].map((component)=>
           <div key={Math.random()} className="col-md-4 pb-2 chart_style" >

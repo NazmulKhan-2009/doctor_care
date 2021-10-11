@@ -30,6 +30,7 @@ body{
  -webkit-backface-visibility: hidden;
  backface-visibility: hidden;
  overflow-x: hidden;
+	
  
 }
 body::-webkit-scrollbar {
