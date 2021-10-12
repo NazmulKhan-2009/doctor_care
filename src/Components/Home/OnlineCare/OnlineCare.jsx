@@ -17,7 +17,9 @@ export default function OnlineCare() {
       <div className="row online_style">     
        
           {/* column left */}
-          <div className="col-md-8 order-md-1 order-2" data-aos="zoom-in-down"  data-aos-delay="200">
+          <div className="col-md-8 order-md-1 order-2" 
+          // data-aos="zoom-in-down"  data-aos-delay="200"
+          >
            
            <p className="pt-5 text-justify text-dark">
            consult with a professional doctor from the comfort of your home.Health Advice and Consulting Online Anytime. Start Today! Ask Your Health Questions Online Anytime.Experts are Here for You. Start Today! Online Tutors 24/7. 
@@ -47,7 +49,9 @@ export default function OnlineCare() {
           </div>
 
           {/* column right */}
-          <div className="col-md-4 order-md-2 order-1" data-aos="zoom-in-down" data-aos-delay="400">
+          <div className="col-md-4 order-md-2 order-1" 
+          // data-aos="zoom-in-down" data-aos-delay="400"
+          >
            <img className="img-fluid"  src={online_care_img} alt="" />       
           </div>
       

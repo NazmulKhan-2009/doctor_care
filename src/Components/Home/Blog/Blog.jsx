@@ -36,7 +36,9 @@ export default function Blog() {
 
         <div className="owl-carousel blog-carousel">
         {Array(6).fill().map(()=>
-          <div key={Math.random()} className="blog-item" data-aos="fade-up">
+          <div key={Math.random()} className="blog-item" 
+          // data-aos="fade-up"
+          >
             <p>
               <i className="bx bxs-quote-alt-left quote-icon-left"></i>
               Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.

@@ -15,7 +15,10 @@ export default function Contact() {
     />       
     <div className="row d-flex align-items-center">         
         {/* column left */}
-        <div className="col-md-4 order-md-1 order-2 contact_left" data-aos="zoom-in-down"  data-aos-delay="200">
+        <div className="col-md-4 order-md-1 order-2 contact_left" 
+        // data-aos="zoom-in-down"  
+        // data-aos-delay="200"
+        >
         <img className="img-fluid"  src={cont_img} alt="" />   
         </div>
 
