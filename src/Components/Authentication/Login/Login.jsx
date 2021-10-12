@@ -8,6 +8,8 @@ import { dataToDb } from '../../../dbManagement';
 import googleIcon from '../../../images/login/google_icon.png';
 import facebookIcon from '../../../images/login/facebook_icon.png';
 import './login.css';
+import doctor from '../../../images/doctor-sm.png'
+import notify from '../../../images/notification/nf-2.png'
 
 
 
@@ -25,6 +27,19 @@ export default function Login() {
    //Sign Up or In
    const [signUp, setSignUp ] = useState(false)
 
+//Texting purpose state
+// const [defaultUser, setDefaultUser]=useState({phone:"01712985380",password:"123"})   
+// const [defaultAdmin, setDefaultAdmin]=useState({phone:"01234567890",password:"admin-Khan-721"}) 
+const  defaultUser={phone:"01712985380",password:"123"}
+const defaultAdmin={phone:"01234567890",password:"admin-Khan-721"}
+
+const handleDefaultUser=()=>{
+   setUserData(defaultUser)
+}
+const handleDefaultAdmin=()=>{
+   setUserData(defaultAdmin)
+}
+console.info(userData)
 //Redirecting path ↓
    const { from } = location.state || { from: { pathname: "/" } };
 
@@ -121,12 +136,27 @@ const signOut =()=>{
   useEffect(()=>{
    setLoadOnAppointment(true)
   },[syncAppointment])
+
+
+ const handleSignUp=()=>{
+   setSignUp(!signUp);
+   setUserData({})
+ } 
   
 
  return (
    <div className={`${loadOnAppointment} bg_login`}>
       <div className="content">     
          <header><img src={logo} alt=""  width="15%" onClick={backToHome} style={{cursor:'Pointer'}}/> Login Zone</header>
+         {!signUp && 
+         <div className="d-flex align-items-center">           
+            <img src={notify} alt="" width="50%" />       
+            <div>
+               <input type="radio" name="type"  id="pos" value="POS" onClick={handleDefaultUser}/> Default User    <br/> 
+               <input type="radio" name="type"  id="ecom" value="e-com" onClick={handleDefaultAdmin}/> Default Admin
+            </div>
+         </div>}
+
       {!userInfo ?
       <>
          <Fade up>       
@@ -187,7 +217,7 @@ const signOut =()=>{
          </div>
          <div className="signup">
             {signUp ?  "Already" : "Dont" } have account?
-            <span  onClick={()=>setSignUp(!signUp)}> {signUp ? "Sign In" : "Sign Up"}</span>
+            <span  onClick={handleSignUp}> {signUp ? "Sign In" : "Sign Up"}</span>
          </div>
          </> :
          <p>You are already logged in <span className="logged_out" onClick={signOut}>click here to Log out</span></p>
